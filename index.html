@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="endSound" controls src="./Sounds/Simon-End-Sound.mp3"></audio>
+    <audio class="btnSound" controls src="./Sounds/Simon-Tab-Sound.mp3"></audio>
+    <audio class="sbtnSound" controls src="./Sounds/Simon-Start-Sound.mp3"></audio>
+    <h2>Simon Says Game</h2>
+    <h3>Press The Button To Start The Game</h3>
+    <button class="start-btn">Start</button>
+    <br />
+    <div class="container">
+      <div class="line">
+        <div class="btn red" type="button" id="red"></div>
+        <div class="btn green" type="button" id="green"></div>
+      </div>
+      <div class="line">
+        <div class="btn yellow" type="button" id="yellow"></div>
+        <div class="btn blue" type="button" id="blue"></div>
+      </div>
+    </div>
+    <h4></h4>
+    <button class="end-btn d-none">Start Again!</button>
+    <a
+      class="tutorial"
+      target="_blank"
+      href="https://www.youtube.com/watch?v=EWJ5uYwQJGU"
+      >How to Play?</a
+    >
+    <script src="app.js"></script>
+  </body>
+</html>
